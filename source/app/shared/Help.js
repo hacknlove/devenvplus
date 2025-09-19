@@ -1,10 +1,18 @@
 import React from 'react';
 import {Text} from 'ink';
+import { asyncit } from '../../AsyncComponents.js';
 
-export default function Help() {
+export default function toast(text, {
+	timeout = 3000,
+	uniqueKey
+}) {
+  return asyncit(Helper, { text, uniqueKey }, "global", timeout);
+}
+
+function Helper({ text }) {
 	return (
 		<Text color="gray">
-			Press up and down arrows to navigate; enter to select, escape to go back; q to quit.
+			{text}
 		</Text>
 	);
 }

@@ -1,0 +1,792 @@
+{
+  "services": {
+    "opensearch": {
+      "filePath": "/srv/docker-compose.yml",
+      "dependencies": []
+    },
+    "opensearch-dashboards": {
+      "filePath": "/srv/docker-compose.yml",
+      "dependencies": []
+    },
+    "elasticsearch-v6": {
+      "filePath": "/srv/docker-compose.yml",
+      "dependencies": []
+    },
+    "mongo": {
+      "filePath": "/srv/docker-compose.yml",
+      "dependencies": []
+    },
+    "mysql": {
+      "filePath": "/srv/docker-compose.yml",
+      "dependencies": []
+    },
+    "redis": {
+      "filePath": "/srv/docker-compose.yml",
+      "dependencies": []
+    },
+    "rabbitmq": {
+      "filePath": "/srv/docker-compose.yml",
+      "dependencies": []
+    },
+    "sqs": {
+      "filePath": "/srv/docker-compose.yml",
+      "dependencies": []
+    },
+    "localstack": {
+      "filePath": "/srv/docker-compose.yml",
+      "dependencies": []
+    },
+    "jaeger": {
+      "filePath": "/srv/docker-compose.yml",
+      "dependencies": []
+    },
+    "wallet-service": {
+      "filePath": "/srv/wallet-service/docker/env/development/docker-compose.yaml",
+      "dependencies": [
+        "paysite-frontend"
+      ]
+    },
+    "wallet-service-gems-consumer": {
+      "filePath": "/srv/wallet-service/docker/env/development/docker-compose.yaml",
+      "dependencies": [
+        "paysite-frontend"
+      ]
+    },
+    "mongodb": {
+      "filePath": "/srv/vmg-reels-cms/docker/env/artifacts/vmg-reels-cms/docker-compose.yml",
+      "dependencies": []
+    },
+    "app": {
+      "filePath": "/srv/vmg-reels-cms/docker/env/artifacts/vmg-reels-cms/docker-compose.yml",
+      "dependencies": []
+    },
+    "tracking-marketing": {
+      "filePath": "/srv/tracking-service/docker/env/development/docker-compose.yml",
+      "dependencies": []
+    },
+    "tracking-external-conversion": {
+      "filePath": "/srv/tracking-service/docker/env/development/docker-compose.yml",
+      "dependencies": []
+    },
+    "tracking-internal-conversion": {
+      "filePath": "/srv/tracking-service/docker/env/development/docker-compose.yml",
+      "dependencies": []
+    },
+    "tracking-data-pipe": {
+      "filePath": "/srv/tracking-service/docker/env/development/docker-compose.yml",
+      "dependencies": []
+    },
+    "token-service": {
+      "filePath": "/srv/token-service/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "stuntman": {
+      "filePath": "/srv/stuntman/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "elasticsearch": {
+      "filePath": "/srv/securify/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "securify": {
+      "filePath": "/srv/securify/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "securify-internal": {
+      "filePath": "/srv/securify/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "trial-upgrade-consumer": {
+      "filePath": "/srv/sales/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "payments-retry-consumer": {
+      "filePath": "/srv/sales/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "mailer-consumer": {
+      "filePath": "/srv/sales/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "retention-consumer": {
+      "filePath": "/srv/sales/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "outgoing-cross-sales-consumer": {
+      "filePath": "/srv/sales/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "subscriptions-retry-consumer": {
+      "filePath": "/srv/sales/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "rebill-cancel-consumer": {
+      "filePath": "/srv/sales/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "sales-subscriptions": {
+      "filePath": "/srv/sales/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "sales-payments": {
+      "filePath": "/srv/sales/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "sales-ci": {
+      "filePath": "/srv/sales/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "profile-data-service": {
+      "filePath": "/srv/profile-data-service/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "frontend-tour": {
+      "filePath": "/srv/paysite-tour/docker/env/development/docker-compose.yaml",
+      "dependencies": [
+        "paysite-api-gateway"
+      ]
+    },
+    "frontend": {
+      "filePath": "/srv/paysite-frontend/docker/env/development/docker-compose.yaml",
+      "dependencies": [
+        "paysite-api-gateway",
+        "securify",
+        "token-service"
+      ]
+    },
+    "redlock": {
+      "filePath": "/srv/paysite-api-gateway/node_modules/@gmsllc/redlock/docker-compose.yml",
+      "dependencies": []
+    },
+    "kodify-data-client": {
+      "filePath": "/srv/paysite-api-gateway/node_modules/@gmsllc/kodify-data-client/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "paysite-api-gateway": {
+      "filePath": "/srv/paysite-api-gateway/docker/env/development/docker-compose.yaml",
+      "dependencies": [
+        "redis",
+        "data-service"
+      ]
+    },
+    "paysite-api": {
+      "filePath": "/srv/paysite-api/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "admin": {
+      "filePath": "/srv/paysite/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "webs": {
+      "filePath": "/srv/paysite/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "webs-api": {
+      "filePath": "/srv/paysite/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "jscompiler": {
+      "filePath": "/srv/paysite/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "nats-proxy": {
+      "filePath": "/srv/nats-postback-proxy/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "nats-proxy-consumer": {
+      "filePath": "/srv/nats-postback-proxy/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "nats": {
+      "filePath": "/srv/nats/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "media-service-mock": {
+      "filePath": "/srv/media-service-dashboard/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "media-service-dashboard": {
+      "filePath": "/srv/media-service-dashboard/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "media-service": {
+      "filePath": "/srv/media-service/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "media-task-consumer": {
+      "filePath": "/srv/media-service/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "frontend-sfw-tour": {
+      "filePath": "/srv/frontend-sfw-tour/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "fairydust": {
+      "filePath": "/srv/fairydust/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "data-service": {
+      "filePath": "/srv/data-service/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "cross-sales": {
+      "filePath": "/srv/cross-sales/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "comment-service": {
+      "filePath": "/srv/comment-service/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    },
+    "billers-mock": {
+      "filePath": "/srv/billers-mock/docker/env/development/docker-compose.yml",
+      "dependencies": []
+    },
+    "signup-success-consumer": {
+      "filePath": "/srv/antifraud/docker/env/development/docker-compose.yml",
+      "dependencies": []
+    },
+    "signup-initiated-consumer": {
+      "filePath": "/srv/antifraud/docker/env/development/docker-compose.yml",
+      "dependencies": []
+    },
+    "device-challenge-consumer": {
+      "filePath": "/srv/antifraud/docker/env/development/docker-compose.yml",
+      "dependencies": []
+    },
+    "antifraud-internal-api": {
+      "filePath": "/srv/antifraud/docker/env/development/docker-compose.yml",
+      "dependencies": []
+    },
+    "adverts-app": {
+      "filePath": "/srv/adverts-app/docker/env/development/docker-compose.yaml",
+      "dependencies": []
+    }
+  },
+  "labels": {
+    "wallet": [
+      "wallet-service",
+      "wallet-service-gems-consumer"
+    ],
+    "channels": [
+      "wallet-service",
+      "wallet-service-gems-consumer"
+    ],
+    "landers": [
+      "frontend-tour"
+    ],
+    "minimal": [
+      "frontend-tour",
+      "frontend"
+    ],
+    "media": [
+      "frontend-tour",
+      "frontend"
+    ],
+    "paysite": [
+      "frontend-tour",
+      "frontend"
+    ],
+    "members": [
+      "frontend"
+    ],
+    "api": [
+      "paysite-api-gateway"
+    ],
+    "backend": [
+      "paysite-api-gateway"
+    ]
+  },
+  "packages": {
+    "wallet-service": {
+      "path": "/srv/wallet-service/package.json",
+      "scripts": {
+        "start": "node .",
+        "start:cron": "node ./src/promo.js",
+        "debug": "nodemon --inspect=0.0.0.0 --config config/nodemon.json",
+        "debug:tracing": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 -r ./src/instrumentation.js .'",
+        "debug:gems-consumer": "nodemon --inspect=0.0.0.0 --config config/nodemon.json --exec 'ts-node -r tsconfig-paths/register ./src/gems-consumer-startup.ts'",
+        "debug:startup": "nodemon --config config/nodemon.json --exec 'node --inspect-brk=0.0.0.0 .'",
+        "debug:test": "node --inspect-brk=0.0.0.0 ./node_modules/.bin/jest --runInBand --timeout=999999999",
+        "test": "jest",
+        "lint:fix": "npm run lint -- --fix",
+        "lint": "eslint . --ext .js,.ts --color",
+        "build:consumer": "tsc && tsc-alias"
+      },
+      "workspacePackages": {}
+    },
+    "vmg-reels-cms": {
+      "path": "/srv/vmg-reels-cms/package.json",
+      "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "migrate-mongo:create": "migrate-mongo create -f migrate-mongo-config.js",
+        "migrate-mongo:down": "migrate-mongo down -f migrate-mongo-config.js",
+        "migrate-mongo:status": "migrate-mongo status -f migrate-mongo-config.js",
+        "migrate-mongo:up": "migrate-mongo up -f migrate-mongo-config.js"
+      },
+      "workspacePackages": {}
+    },
+    "tracking-service": {
+      "path": "/srv/tracking-service/package.json",
+      "scripts": {
+        "start": "node -r ts-node/register src/index.ts",
+        "debug": "nodemon --exec node --inspect=0.0.0.0 -r ts-node/register src/index.ts",
+        "debug:tracing": "nodemon --exec node --inspect=0.0.0.0 -r ts-node/register -r ./src/instrumentation.ts src/index.ts",
+        "debug:startup": "nodemon --exec node --inspect-brk=0.0.0.0 . -r ts-node/register src/index.ts",
+        "debug:test": "node --inspect-brk=0.0.0.0 node_modules/.bin/jest --runInBand --testTimeout=999999999",
+        "build": "tsc",
+        "lint": "eslint . --ext .ts --color",
+        "lint:fix": "yarn lint --fix",
+        "test": "yarn test:all",
+        "test:all": "NODE_ENV=test jest --forceExit ./tests/**",
+        "test:unit": "NODE_ENV=test jest --forceExit ./tests/unit/**",
+        "test:integration": "NODE_ENV=test jest --forceExit ./tests/integration/**",
+        "migrate-mongo:create": "migrate-mongo create",
+        "migrate-mongo:down": "migrate-mongo down",
+        "migrate-mongo:status": "migrate-mongo status",
+        "migrate-mongo:up": "migrate-mongo up"
+      },
+      "workspacePackages": {}
+    },
+    "token-service": {
+      "path": "/srv/token-service/package.json",
+      "scripts": {
+        "debug": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 .'",
+        "debug:startup": "nodemon --config config/nodemon.json --exec 'node --inspect-brk=0.0.0.0 .'",
+        "debug:tracing": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 -r ./src/instrumentation.js .'",
+        "debug:test": "node --inspect-brk=0.0.0.0 ./node_modules/.bin/jest --runInBand --timeout=999999999",
+        "lint:fix": "yarn lint -- --fix",
+        "lint": "eslint . --color",
+        "test": "jest",
+        "start": "node ."
+      },
+      "workspacePackages": {}
+    },
+    "@gmsllc/stuntman": {
+      "path": "/srv/stuntman/package.json",
+      "scripts": {
+        "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+        "build": "tsc",
+        "start": "node ./dist/index.js",
+        "debug": "node --inspect-brk=0.0.0.0 ./node_modules/.bin/ts-node --transpile-only ./src/index.ts",
+        "lint": "prettier 'src/**/*.ts' --check && eslint . --ext ts",
+        "lint:fix": "prettier 'src/**/*.ts' --write && eslint . --ext ts --fix",
+        "test": "jest --forceExit --detectOpenHandles"
+      },
+      "workspacePackages": {}
+    },
+    "@gmsllc/securify": {
+      "path": "/srv/securify/package.json",
+      "scripts": {
+        "debug:startup": "nodemon --config config/nodemon.json --exec 'node --inspect-brk=0.0.0.0 .'",
+        "debug:tracing": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 -r ./src/instrumentation.js .'",
+        "debug:test": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.js --timeout=999999999",
+        "debug": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 .'",
+        "lint": "eslint . --ext .js --color",
+        "lint:fix": "yarn lint -- --fix",
+        "start": "node .",
+        "start:internal": "node src/app-internal.js",
+        "test": "nyc --include 'src/**/*.js' --all --reporter clover --reporter html --report-dir coverage mocha --config .mocharc.js",
+        "upgrade": "npm-check -u",
+        "generate-jwk": "node scripts/generate-jwk.js"
+      },
+      "workspacePackages": {}
+    },
+    "sales": {
+      "path": "/srv/sales/package.json",
+      "scripts": {
+        "subscriptions:debug:startup": "yarn workspace subscriptions debug:startup",
+        "subscriptions:debug:test": "yarn workspace subscriptions debug:test",
+        "subscriptions:test": "yarn workspace subscriptions test",
+        "subscriptions:build": "yarn workspace subscriptions build",
+        "subscriptions:start": "yarn workspace subscriptions start",
+        "subscriptions:start:dev": "yarn workspace subscriptions start:dev",
+        "payments:debug:startup": "yarn workspace payments debug:startup",
+        "payments:debug:test": "yarn workspace payments debug:test",
+        "payments:test": "yarn workspace payments test",
+        "payments:build": "yarn workspace payments build",
+        "payments:start": "yarn workspace payments start",
+        "payments:start:dev": "yarn workspace payments start:dev",
+        "shared:debug:test": "yarn workspace shared debug:test",
+        "format": "yarn workspaces run format",
+        "lint": "yarn workspaces run lint",
+        "lint:fix": "yarn workspaces run lint:fix",
+        "test": "yarn workspaces run test",
+        "test:integration": "yarn workspaces run test:integration",
+        "test:unit": "yarn workspaces run test:unit",
+        "test:colors": "yarn workspaces run test:colors"
+      },
+      "workspacePackages": {}
+    },
+    "@gmsllc/profile-data-service": {
+      "path": "/srv/profile-data-service/package.json",
+      "scripts": {
+        "start": "node .",
+        "debug": "nodemon --config config/nodemon/config.json --exec 'node --inspect=0.0.0.0 .'",
+        "debug:startup": "nodemon --config config/nodemon/config.json --exec 'node --inspect-brk=0.0.0.0 .'",
+        "debug:tracing": "nodemon --config config/nodemon/config.json --exec 'node --inspect=0.0.0.0 -r ./src/instrumentation.js .'",
+        "debug:test": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --timeout=999999999",
+        "debug:test:unit": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.unit.js --timeout=999999999",
+        "debug:test:integration": "node --inspect-brk=0.0.0.0 node_modules/.bin/jest --config jest.config.integration.js --runInBand --testTimeout=999999999",
+        "test": "yarn test:unit && yarn test:integration && yarn run merge-coverage-reports",
+        "test:unit": "nyc --include 'src/**/*.js' --all --reporter json --report-dir coverage/mocha mocha --config .mocharc.unit.js",
+        "test:integration": "jest --detectOpenHandles --config jest.config.integration.js",
+        "merge-coverage-reports": "node src/util/merge-coverage-reports.js",
+        "lint": "eslint --quiet {__mocks__,__tests__,src,test,scripts}/**/*.js",
+        "lint:fix": "eslint --quiet --fix {__mocks__,__tests__,src,test,scripts}/**/*.js",
+        "migration:create": "migrate-mongo create -f ./config/migrate-mongo/migration.js",
+        "migration:down": "migrate-mongo down -f ./config/migrate-mongo/migration.js",
+        "migration:status": "migrate-mongo status -f ./config/migrate-mongo/migration.js",
+        "migration:up": "migrate-mongo up -f ./config/migrate-mongo/migration.js",
+        "legacy-migration:up": "migrate-mongo up -f ./config/migrate-mongo/legacy-migration.js",
+        "job:build-search-index": "node . build-search-index",
+        "job:import-users": "node . import-users",
+        "job:rotate-autologin-keys": "node . rotate-autologin-keys -t m && node . rotate-autologin-keys -t i"
+      },
+      "workspacePackages": {}
+    },
+    "paysite-tour": {
+      "path": "/srv/paysite-tour/package.json",
+      "scripts": {
+        "snapshot:update": "yarn test -u",
+        "dev": "next dev",
+        "build": "next build",
+        "start": "node ./node_modules/.bin/next start",
+        "lint": "eslint next.config.js && next lint",
+        "lint:fix": "eslint next.config.js --fix && next lint --fix",
+        "test": "TZ=UTC jest",
+        "type-check": "tsc",
+        "nats-helper:build": "node ./scripts/nats-helper/webpack.cjs",
+        "analyze": "node ./scripts/bundle-analyze/index.cjs"
+      },
+      "workspacePackages": {}
+    },
+    "paysite-frontend": {
+      "path": "/srv/paysite-frontend/package.json",
+      "scripts": {
+        "build": "yarn run build:clean && yarn run build:server && yarn run build:browser",
+        "build:clean": "rm -rf ./build",
+        "build:server": "node ./etc/scripts/webpack.build.js --server",
+        "build:browser": "node ./etc/scripts/webpack.build.js",
+        "debug": "nodemon --config config/nodemon.json app.js",
+        "dev": "nodemon --config config/nodemon.json app.js",
+        "debug:tracing": "nodemon --config config/nodemon.json --exec node --inspect=0.0.0.0 -r ./instrumentation.js app.js",
+        "debug:test": "TZ=UTC NODE_ENV=test node --inspect-brk=0.0.0.0 ./node_modules/.bin/jest --runInBand --timeout=999999999",
+        "format": "yarn run format:app && yarn run format:src && yarn run format:config && yarn run format:routes && yarn run format:etc",
+        "format:app": "prettier-eslint app.service.js --write",
+        "format:src": "prettier-eslint src/**/**/*.{js,jsx} --write",
+        "format:config": "prettier-eslint config/**/*.{js,jsx} --write",
+        "format:routes": "prettier-eslint routes/**/*.{js,jsx} --write",
+        "format:etc": "prettier-eslint etc/**/*.{js,jsx} --write",
+        "lint": "eslint --quiet --ext .jsx,.js ./app.service.js config/ routes/ src/ etc/",
+        "lint:fix": "eslint --quiet --ext .jsx,.js ./app.service.js config/ routes/ src/ etc/ --fix",
+        "lint:warnings": "eslint --ext .jsx,.js ./app.service.js config/ routes/ src/ etc/",
+        "lint:css": "stylelint ./src/client/**/*.{js,jsx}",
+        "start": "node app.js",
+        "test": "TZ=UTC NODE_ENV=test jest",
+        "test:coverage:debug": "TZ=UTC NODE_ENV=test node --inspect-brk=9229 ./node_modules/.bin/jest --runInBand --coverage",
+        "test:coverage": "TZ=UTC NODE_ENV=test jest --coverage",
+        "test:security:nsp": "nsp check",
+        "test:watch": "TZ=UTC NODE_ENV=test jest --watch"
+      },
+      "workspacePackages": {}
+    },
+    "@gmsllc/redlock": {
+      "path": "/srv/paysite-api-gateway/node_modules/@gmsllc/redlock/package.json",
+      "scripts": {
+        "test": "istanbul cover mocha",
+        "test-ci": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls"
+      },
+      "workspacePackages": {}
+    },
+    "@gmsllc/kodify-data-client": {
+      "path": "/srv/paysite-api-gateway/node_modules/@gmsllc/kodify-data-client/package.json",
+      "scripts": {
+        "start": "node ./src/ui/cli.js",
+        "debug": "node --inspect-brk=0.0.0.0 ./src/ui/cli.js",
+        "format": "prettier --write . && eslint . --fix",
+        "lint": "prettier --check . && eslint .",
+        "debug:test": "node --inspect-brk=0.0.0.0 node_modules/.bin/jest --runInBand --testTimeout=999999999",
+        "test:integration": "jest --config jest.config.integration.js --forceExit --detectOpenHandles",
+        "test:unit": "jest --config jest.config.unit.js --forceExit --detectOpenHandles",
+        "test": "jest --forceExit --detectOpenHandles"
+      },
+      "workspacePackages": {}
+    },
+    "paysite-api-gateway": {
+      "path": "/srv/paysite-api-gateway/package.json",
+      "scripts": {
+        "start": "node .",
+        "debug": "nodemon --exec node --inspect=0.0.0.0 -r ts-node/register --config config/nodemon.json src/server.ts",
+        "debug:startup": "nodemon --config config/nodemon.json --exec 'node --inspect-brk=0.0.0.0 .'",
+        "debug:tracing": "nodemon --exec node --inspect=0.0.0.0 -r ./src/instrumentation.js -r ts-node/register --config config/nodemon.json src/server.ts",
+        "debug:test": "node --inspect-brk=0.0.0.0 ./node_modules/.bin/jest --runInBand --timeout=999999999",
+        "lint": "eslint . --color --ignore-pattern '**/dist/**'",
+        "lint:fix": "yarn lint  --ignore-pattern '**/dist/**' -- --fix",
+        "format": "prettier-eslint --write $PWD/'src/**/*.js'",
+        "format:check": "prettier-eslint --pretty-error $PWD/'src/**/*.js'",
+        "test": "jest",
+        "build": "tsc --build tsconfig.build.json && tsc-alias && cp src/schema/app.schema.graphql dist/schema/app.schema.graphql"
+      },
+      "workspacePackages": {}
+    },
+    "paysite-api": {
+      "path": "/srv/paysite-api/package.json",
+      "scripts": {
+        "debug:startup": "nodemon --config config/nodemon.json --exec 'node --inspect-brk=0.0.0.0 .'",
+        "debug:tracing": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 -r ./src/instrumentation.js .'",
+        "debug:test:integration": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.integration.js --timeout=999999999",
+        "debug:test:unit": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.unit.js --timeout=999999999",
+        "debug": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 .'",
+        "lint": "eslint .",
+        "merge-coverage-reports": "node src/scripts/merge-coverage-reports.js",
+        "start": "node .",
+        "test:integration": "nyc --include 'src/**/*.js' --all --reporter json --report-dir coverage/integration mocha --config .mocharc.integration.js",
+        "test:unit": "nyc --include 'src/**/*.js' --all --reporter json --report-dir coverage/unit mocha --config .mocharc.unit.js",
+        "test": "yarn test:unit && yarn test:integration && yarn merge-coverage-reports",
+        "upgrade-interactive": "npm-check --update"
+      },
+      "workspacePackages": {}
+    },
+    "paysite": {
+      "path": "/srv/paysite/package.json",
+      "scripts": {
+        "start": "node .",
+        "start:admin": "node admin.js",
+        "start:webs": "node paysite.js",
+        "start:webs-api": "node paysite.js",
+        "lint": "eslint --quiet .",
+        "lint:fix": "eslint --quiet --fix .",
+        "test": "nyc --reporter=text --reporter=clover mocha --exit --config .mocharc.js",
+        "test:nocoverage": "mocha --exit --config .mocharc.js",
+        "debug:test": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --exit --config .mocharc.js --timeout=999999999",
+        "debug:admin": "nodemon --config nodemon/admin.json --exec 'node --inspect=0.0.0.0 admin.js' | pino-pretty",
+        "debug:webs": "nodemon --config nodemon/webs.json --exec 'node --inspect=0.0.0.0 paysite.js' | pino-pretty",
+        "debug:webs-api": "nodemon --config nodemon/websapi.json --exec 'node --inspect=0.0.0.0 paysite.js' | pino-pretty",
+        "debug:startup:admin": "nodemon --config nodemon/admin.json --exec 'node --inspect-brk=0.0.0.0 admin.js' | pino-pretty",
+        "debug:startup:webs": "nodemon --config nodemon/webs.json --exec 'node --inspect-brk=0.0.0.0 paysite.js' | pino-pretty",
+        "debug:startup:webs-api": "nodemon --config nodemon/websapi.json --exec 'node --inspect-brk=0.0.0.0 paysite.js' | pino-pretty",
+        "debug:tracing:admin": "nodemon --config nodemon/admin.json --exec 'node --inspect=0.0.0.0 -r ./instrumentation.js admin.js' | pino-pretty",
+        "debug:tracing:webs": "nodemon --config nodemon/webs.json --exec 'node --inspect=0.0.0.0 -r ./instrumentation.js paysite.js' | pino-pretty",
+        "debug:tracing:webs-api": "nodemon --config nodemon/websapi.json --exec 'node --inspect=0.0.0.0 -r ./instrumentation.js paysite.js' | pino-pretty",
+        "upgrade": "npm-check -u"
+      },
+      "workspacePackages": {}
+    },
+    "nats-proxy": {
+      "path": "/srv/nats-postback-proxy/package.json",
+      "scripts": {
+        "start": "node .",
+        "requeue": "node src/postback-proxy/ui/cli/requeue-dead-letter.js",
+        "debug": "nodemon -L --config config/nodemon.json",
+        "debug:consumer": "nodemon -L --config config/nodemon.json --exec 'node --trace-warnings src/postback-proxy/ui/amqp/start.js'",
+        "debug:startup": "nodemon -L --config config/nodemon.json --exec 'node --trace-warnings .'",
+        "lint": "eslint . --ext .js --color",
+        "lint:fix": "eslint --fix . --ext .js",
+        "test": "NODE_ENV=test jest --collect-coverage"
+      },
+      "workspacePackages": {}
+    },
+    "nats": {
+      "path": "/srv/nats/package.json",
+      "scripts": {},
+      "workspacePackages": {}
+    },
+    "media-service-dashboard": {
+      "path": "/srv/media-service-dashboard/package.json",
+      "scripts": {
+        "client": "yarn workspace @media-service-dashboard/client start",
+        "client:build": "yarn workspace @media-service-dashboard/client build",
+        "server": "yarn workspace @media-service-dashboard/server start",
+        "lint": "yarn workspace @media-service-dashboard/client lint",
+        "test": "yarn workspaces run test"
+      },
+      "workspacePackages": {}
+    },
+    "media-service": {
+      "path": "/srv/media-service/package.json",
+      "scripts": {
+        "debug:startup": "nodemon --config config/nodemon.json --exec 'node --inspect-brk=0.0.0.0 .'",
+        "debug:test:integration": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.integration.js --timeout=999999999",
+        "debug:tracing": "nodemon --exec node --inspect=0.0.0.0 -r ./src/instrumentation.js  --config config/nodemon.json .",
+        "debug:test:unit": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.unit.js --timeout=999999999",
+        "debug:test": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.js --timeout=999999999",
+        "debug": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 .'",
+        "lint": "eslint --color --ext .js .",
+        "merge-coverage-reports": "node src/scripts/merge-coverage-reports.js",
+        "start": "node .",
+        "test:integration": "nyc --include 'src/**/*.js' --all --reporter json --report-dir coverage/integration mocha --config .mocharc.integration.js",
+        "test:unit": "nyc --include 'src/**/*.js' --all --reporter json --report-dir coverage/unit mocha --config .mocharc.unit.js",
+        "test": "yarn run test:unit && yarn run test:integration && yarn run merge-coverage-reports",
+        "track-postbacks": "node src/scripts/dev-postback-tracker.js",
+        "requeue-dead-letter": "node src/app.js --script=requeue-dead-letter.js --nofirestarter"
+      },
+      "workspacePackages": {}
+    },
+    "frontend-sfw-tour": {
+      "path": "/srv/frontend-sfw-tour/package.json",
+      "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "test": "node --import tsx --import ./test/setup.mjs --test --experimental-test-module-mocks src/**/*test.{ts,tsx}",
+        "test:single": "node --import tsx --import ./test/setup.mjs --test-force-exit --experimental-test-module-mocks",
+        "format": "prettier --write . && next lint --fix && tsc --noEmit",
+        "format:check": "prettier --check . && next lint",
+        "type-check": "tsc --noEmit"
+      },
+      "workspacePackages": {}
+    },
+    "@gmsllc/fairydust": {
+      "path": "/srv/fairydust/package.json",
+      "scripts": {
+        "debug:startup": "nodemon --config config/nodemon.json --exec 'node --inspect-brk=0.0.0.0 .'",
+        "debug:test:integration": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.integration.js --timeout=999999999",
+        "debug:tracing": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 -r ./src/app/instrumentation.js .'",
+        "debug:test:unit": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.unit.js --timeout=999999999",
+        "debug:test": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.js --timeout=999999999",
+        "debug": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 .'",
+        "lint": "eslint --color --ext .js .",
+        "lint:fix": "eslint --color --ext .js --fix .",
+        "start": "node .",
+        "test:integration": "nyc --include 'src/**/*.js' --all --reporter clover --report-dir coverage/integration mocha --config .mocharc.integration.js",
+        "test:unit": "nyc --include 'src/**/*.js' --all --reporter clover --report-dir coverage/unit mocha --config .mocharc.unit.js",
+        "test": "nyc --include 'src/**/*.js' --all --reporter clover --report-dir coverage mocha --config .mocharc.js"
+      },
+      "workspacePackages": {}
+    },
+    "@gmsllc/data-service": {
+      "path": "/srv/data-service/package.json",
+      "scripts": {
+        "start": "node .",
+        "debug": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 .'",
+        "debug:startup": "nodemon --config config/nodemon.json --exec 'node --inspect-brk=0.0.0.0 .'",
+        "debug:tracing": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 -r ./src/instrumentation.js .'",
+        "debug:test": "npm run debug:test:unit && npm run debug:test:integration",
+        "debug:test:unit": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.unit.js --timeout=999999999",
+        "debug:test:integration": "node --inspect-brk=0.0.0.0 node_modules/.bin/jest --runInBand --config jest.config.integration.js --testTimeout=999999999",
+        "debug:populate-search": "node --inspect-brk=0.0.0.0 . run populate-search",
+        "debug:rebuild-sorted-lists-for-comments": "node --inspect-brk=0.0.0.0 . rebuild-sorted-lists-for-comments",
+        "test": "npm run test:unit && npm run test:integration && npm run merge-coverage-reports",
+        "test:unit": "nyc --include 'src/**/*.js' --all --reporter json --report-dir coverage/mocha mocha --config .mocharc.unit.js",
+        "test:integration": "jest --config jest.config.integration.js",
+        "merge-coverage-reports": "node scripts/merge-coverage-reports.js",
+        "migrate-mongo:create": "migrate-mongo create -f ./config/migrate-mongo-config.js",
+        "migrate-mongo:down": "migrate-mongo down -f ./config/migrate-mongo-config.js",
+        "migrate-mongo:status": "migrate-mongo status -f ./config/migrate-mongo-config.js",
+        "migrate-mongo:up": "migrate-mongo up -f ./config/migrate-mongo-config.js",
+        "fakesite:local:create": "mongosh ./scripts/mongosh/fakesite/site.js ./scripts/mongosh/fakesite/create.js",
+        "fakesite:local:clean": "mongosh ./scripts/mongosh/fakesite/site.js ./scripts/mongosh/fakesite/clean.js",
+        "fakesite:local:reset": "yarn fakesite:local:clean && yarn fakesite:local:create",
+        "fakesite:staging:create": "mongosh dev.mongodb-staging-v2.internal.madcheddar.com:27017 ./scripts/mongosh/fakesite/site.js ./scripts/mongosh/fakesite/create.js",
+        "fakesite:staging:clean": "mongosh dev.mongodb-staging-v2.internal.madcheddar.com:27017 ./scripts/mongosh/fakesite/site.js ./scripts/mongosh/fakesite/clean.js",
+        "fakesite:staging:reset": "yarn fakesite:staging:clean && yarn fakesite:staging:create",
+        "lint": "eslint --quiet {__mocks__,__tests__,migrations,src}/**/*.js",
+        "lint:fix": "eslint --fix {__mocks__,__tests__,migrations,src}/**/*.js",
+        "upgrade": "npm-check --update --save-exact",
+        "populate-search": "node . -j populate-search",
+        "populate-search:reindex": "node . -j populate-search -re",
+        "populate-search:faceted": "node . -j populate-search -it video performer",
+        "create-aliases": "node . -j create-search-index-aliases",
+        "create-search-indices": "node . -j create-indices-search",
+        "delete-search-indices": "node . -j delete-search-indices",
+        "remove-index-aliases": "node . -j remove-search-index-in-aliases",
+        "point-alias-to-index": "node . -j point-alias-to-index",
+        "rebuild-sorted-lists-for-comments": "node . -j rebuild-sorted-lists-for-comments",
+        "generate-user-search-pipeline": "node . -j generate-user-search-pipeline"
+      },
+      "workspacePackages": {}
+    },
+    "@gmsllc/cross-sales": {
+      "path": "/srv/cross-sales/package.json",
+      "scripts": {
+        "debug:startup": "nodemon --config config/nodemon.json --exec 'node --inspect-brk=0.0.0.0 .'",
+        "debug:tracing": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 -r ./src/instrumentation.js .'",
+        "debug:test:integration": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.integration.js --timeout=999999999",
+        "debug:test:unit": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.unit.js --timeout=999999999",
+        "debug:test": "node --inspect-brk=0.0.0.0 node_modules/.bin/mocha --config .mocharc.js --timeout=999999999",
+        "debug": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 .'",
+        "lint": "eslint . --ext .js --color",
+        "lint:fix": "eslint --fix . --ext .js --color",
+        "start": "node .",
+        "test:integration": "nyc --include 'src/**/*.js' --all --reporter clover --report-dir coverage/integration mocha --config .mocharc.integration.js",
+        "test:unit": "nyc --include 'src/**/*.js' --all --reporter clover --report-dir coverage/unit mocha --config .mocharc.unit.js",
+        "test": "nyc --include 'src/**/*.js' --all --reporter clover --report-dir coverage mocha --config .mocharc.js"
+      },
+      "workspacePackages": {}
+    },
+    "comment-service": {
+      "path": "/srv/comment-service/package.json",
+      "scripts": {
+        "start": "node .",
+        "debug": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 .'",
+        "debug:tracing": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 -r ./src/app/instrumentation.js .'",
+        "debug:startup": "nodemon --config config/nodemon.json --exec 'node --inspect-brk=0.0.0.0 .'",
+        "debug:test": "node --inspect-brk=0.0.0.0 ./node_modules/.bin/jest --runInBand --testTimeout=999999999",
+        "test": "jest",
+        "lint:fix": "npm run lint -- --fix",
+        "lint": "eslint . --ext .js --color"
+      },
+      "workspacePackages": {}
+    },
+    "billers-mock": {
+      "path": "/srv/billers-mock/package.json",
+      "scripts": {
+        "prepare": "husky install",
+        "precommit": "lint-staged",
+        "prepush": "npm-run-all --parallel lint 'test:colors --coverage=false'",
+        "debug:startup": "nodemon --exec node --inspect-brk=0.0.0.0 . app",
+        "debug:test": "node --inspect-brk=0.0.0.0 node_modules/.bin/jest --runInBand --testTimeout=999999999",
+        "debug": "nodemon --exec node --inspect=0.0.0.0 . app",
+        "clean": "del dist/",
+        "build": "tsc",
+        "start": "node dist/main.js",
+        "start:dev": "nodemon --exec node --inspect=0.0.0.0 -r tsconfig-paths/register -r ts-node/register src/main.ts",
+        "lint": "eslint . --ext .ts --color",
+        "lint:fix": "eslint . --ext .ts --fix --color",
+        "test": "env NODE_ENV=test NODE_CONFIG_ENV=test jest --detectOpenHandles",
+        "test:colors": "env NODE_ENV=test NODE_CONFIG_ENV=test jest --detectOpenHandles --colors"
+      },
+      "workspacePackages": {}
+    },
+    "antifraud": {
+      "path": "/srv/antifraud/package.json",
+      "scripts": {
+        "start": "node -r ts-node/register src/index.ts | pino-pretty",
+        "debug": "nodemon --exec node --inspect=0.0.0.0 -r ts-node/register src/index.ts | pino-pretty",
+        "debug:startup": "nodemon --exec node --inspect-brk=0.0.0.0 -r ts-node/register src/index.ts | pino-pretty",
+        "debug:tracing": "nodemon --exec node --inspect=0.0.0.0 -r ts-node/register -r ./src/instrumentation.ts src/index.ts",
+        "debug:test": "node --inspect-brk=0.0.0.0 node_modules/.bin/jest --runInBand --testTimeout=999999999",
+        "debug:test:unit": "NODE_ENV=test node --inspect-brk=0.0.0.0 node_modules/.bin/jest -c jest.unit.config.ts --runInBand --testTimeout=999999999",
+        "debug:test:integration": "NODE_ENV=test node --inspect-brk=0.0.0.0 node_modules/.bin/jest -c jest.integration.config.ts --runInBand --testTimeout=999999999",
+        "build": "tsc",
+        "lint": "eslint . --color",
+        "lint:fix": "yarn lint -- --fix",
+        "test": "yarn test:all && yarn merge-coverages",
+        "test:all": "yarn test:unit --coverage=true && yarn test:integration --coverage=true",
+        "test:unit": "NODE_ENV=test jest -c jest.unit.config.ts",
+        "test:integration": "NODE_ENV=test jest -c jest.integration.config.ts --runInBand",
+        "merge-coverages": "nyc merge coverage coverage/coverage-final.json && nyc report -t coverage --reporter=clover --reporter=html",
+        "generate-jwk": "ts-node ./scripts/generate-jwk.ts"
+      },
+      "workspacePackages": {}
+    },
+    "adverts-app": {
+      "path": "/srv/adverts-app/package.json",
+      "scripts": {
+        "start": "node .",
+        "debug": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 .'",
+        "debug:tracing": "nodemon --config config/nodemon.json --exec 'node --inspect=0.0.0.0 -r ./src/instrumentation.js .'",
+        "debug:startup": "nodemon --config config/nodemon.json --exec 'node --inspect-brk=0.0.0.0 .'",
+        "test": "jest",
+        "debug:test": "node --inspect-brk=0.0.0.0 ./node_modules/.bin/jest --runInBand --testTimeout=999999999",
+        "lint:fix": "yarn lint -- --fix",
+        "lint": "eslint . --ext .js --color"
+      },
+      "workspacePackages": {}
+    }
+  }
+}
